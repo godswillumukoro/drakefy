@@ -1,0 +1,43 @@
+{
+    "name": "Drakefy",
+    "version": "0.1.0",
+    "description": "Replaces all images on a website to Drake's images",
+    "permissions": ["webRequest", "tabs"],
+    "host_permissions": ["<all_urls>"],
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+            "assets/images/1.webp",
+            "assets/images/2.webp",
+            "assets/images/3.webp",
+            "assets/images/4.webp",
+            "assets/images/5.webp",
+            "assets/images/6.webp",
+            "assets/images/7.webp",
+            "assets/images/8.webp",
+            "assets/images/9.webp",
+            "assets/images/10.webp",
+            "assets/images/11.webp",
+            "assets/images/12.webp",
+            "assets/images/13.webp"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/images/13.webp",
+        "24": "assets/images/13.webp",
+        "32": "assets/images/13.webp"
+      },
+      "default_title": "Drakefy"
+    },
+    "manifest_version": 3
+}
